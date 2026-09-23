@@ -1,0 +1,57 @@
+/*
+ * Theater Fill for YouTube
+ *
+ * Makes the theater-mode player fill the entire window: the masthead is
+ * hidden and the player stretches to 100vh. The video itself always uses
+ * object-fit: contain, so it letterboxes (never crops) when the window
+ * shape doesn't match the video's aspect ratio.
+ *
+ * Every rule is gated on the `ytf-on` class that content.js maintains on
+ * <html> while the extension is enabled (toolbar toggle, on by default),
+ * and on YouTube's own `theater` attribute so normal mode is untouched.
+ *
+ * Selectors verified against YouTube's DOM as of 2026-09: the theater
+ * player is #full-bleed-container (there is no #player-theater-container
+ * anymore), and the <video> is sized by YouTube's JS with inline
+ * width/height/left/top plus object-fit: cover, which we override below.
+ */
+
+/* Hide the masthead and reclaim its space while theater mode is active. */
+html.ytf-on:has(ytd-watch-flexy[theater]) #masthead-container {
+  display: none !important;
+}
+
+html.ytf-on:has(ytd-watch-flexy[theater]) #page-manager {
+  margin-top: 0 !important;
+}
+
+/* Stretch the theater player wrapper to the full viewport. */
+html.ytf-on ytd-watch-flexy[theater] #full-bleed-container {
+  height: 100vh !important;
+  min-height: 100vh !important;
+  max-height: 100vh !important;
+}
+
+/* Every wrapper between the player container and the video must follow. */
+html.ytf-on ytd-watch-flexy[theater] #player-full-bleed-container,
+html.ytf-on ytd-watch-flexy[theater] #player-container,
+html.ytf-on ytd-watch-flexy[theater] ytd-player,
+html.ytf-on ytd-watch-flexy[theater] ytd-player #container,
+html.ytf-on ytd-watch-flexy[theater] #movie_player,
+html.ytf-on ytd-watch-flexy[theater] .html5-video-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/*
+ * Force the video to letterbox inside the full-window player: YouTube
+ * writes inline width/height/left/top (contain-fit of the *old* container
+ * size) and object-fit: cover, all of which must lose to these rules.
+ */
+html.ytf-on ytd-watch-flexy[theater] video.html5-main-video {
+  width: 100% !important;
+  height: 100% !important;
+  left: 0 !important;
+  top: 0 !important;
+  object-fit: contain !important;
+}

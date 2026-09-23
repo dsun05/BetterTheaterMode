@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97867543306463180077440C /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 97867541306463180077440C /* AppIcon.icon */; };
+		97901B7830645871001D28B5 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 97901B7630645871001D28B5 /* Main.html */; };
+		97901B7A30645871001D28B5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 97901B7930645871001D28B5 /* Icon.png */; };
+		97901B7C30645871001D28B5 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 97901B7B30645871001D28B5 /* Style.css */; };
+		97901B7E30645871001D28B5 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 97901B7D30645871001D28B5 /* Script.js */; };
+		97901B8C30645871001D28B5 /* BetterTheaterMode Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 97901B8B30645871001D28B5 /* BetterTheaterMode Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97901B9130645871001D28B5 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97901B9030645871001D28B5 /* SafariWebExtensionHandler.swift */; };
+		97901BA230645871001D28B5 /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 97901B9D30645871001D28B5 /* content.css */; };
+		97901BA330645871001D28B5 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 97901B9E30645871001D28B5 /* background.js */; };
+		97901BA430645871001D28B5 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 97901B9F30645871001D28B5 /* icons */; };
+		97901BA530645871001D28B5 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 97901BA030645871001D28B5 /* manifest.json */; };
+		97901BA630645871001D28B5 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 97901BA130645871001D28B5 /* content.js */; };
+		97901BA830645871001D28B5 /* BetterTheaterModeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97901BA730645871001D28B5 /* BetterTheaterModeApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97901B8D30645871001D28B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97901B6830645871001D28B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97901B8A30645871001D28B5;
+			remoteInfo = "BetterTheaterMode Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97901B9830645871001D28B5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				97901B8C30645871001D28B5 /* BetterTheaterMode Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		97867541306463180077440C /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		97901B7030645871001D28B5 /* BetterTheaterMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterTheaterMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97901B7730645871001D28B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		97901B7930645871001D28B5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		97901B7B30645871001D28B5 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		97901B7D30645871001D28B5 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		97901B8630645871001D28B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97901B8B30645871001D28B5 /* BetterTheaterMode Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BetterTheaterMode Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97901B9030645871001D28B5 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		97901B9230645871001D28B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97901B9D30645871001D28B5 /* content.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = content.css; path = Resources/content.css; sourceTree = "<group>"; };
+		97901B9E30645871001D28B5 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
+		97901B9F30645871001D28B5 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		97901BA030645871001D28B5 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		97901BA130645871001D28B5 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+		97901BA730645871001D28B5 /* BetterTheaterModeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterTheaterModeApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97901B6D30645871001D28B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		97901B8830645871001D28B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97901B6730645871001D28B5 = {
+			isa = PBXGroup;
+			children = (
+				97901B7230645871001D28B5 /* BetterTheaterMode */,
+				97901B8F30645871001D28B5 /* BetterTheaterMode Extension */,
+				97867541306463180077440C /* AppIcon.icon */,
+				97901B7130645871001D28B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97901B7130645871001D28B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97901B7030645871001D28B5 /* BetterTheaterMode.app */,
+				97901B8B30645871001D28B5 /* BetterTheaterMode Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97901B7230645871001D28B5 /* BetterTheaterMode */ = {
+			isa = PBXGroup;
+			children = (
+				97901BA730645871001D28B5 /* BetterTheaterModeApp.swift */,
+				97901B8630645871001D28B5 /* Info.plist */,
+				97901B7530645871001D28B5 /* Resources */,
+			);
+			path = BetterTheaterMode;
+			sourceTree = "<group>";
+		};
+		97901B7530645871001D28B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97901B7630645871001D28B5 /* Main.html */,
+				97901B7930645871001D28B5 /* Icon.png */,
+				97901B7B30645871001D28B5 /* Style.css */,
+				97901B7D30645871001D28B5 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		97901B8F30645871001D28B5 /* BetterTheaterMode Extension */ = {
+			isa = PBXGroup;
+			children = (
+				97901B9C30645871001D28B5 /* Resources */,
+				97901B9030645871001D28B5 /* SafariWebExtensionHandler.swift */,
+				97901B9230645871001D28B5 /* Info.plist */,
+			);
+			path = "BetterTheaterMode Extension";
+			sourceTree = "<group>";
+		};
+		97901B9C30645871001D28B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97901B9D30645871001D28B5 /* content.css */,
+				97901B9E30645871001D28B5 /* background.js */,
+				97901B9F30645871001D28B5 /* icons */,
+				97901BA030645871001D28B5 /* manifest.json */,
+				97901BA130645871001D28B5 /* content.js */,
+			);
+			name = Resources;
+			path = "BetterTheaterMode Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97901B6F30645871001D28B5 /* BetterTheaterMode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97901B9930645871001D28B5 /* Build configuration list for PBXNativeTarget "BetterTheaterMode" */;
+			buildPhases = (
+				97901B6C30645871001D28B5 /* Sources */,
+				97901B6D30645871001D28B5 /* Frameworks */,
+				97901B6E30645871001D28B5 /* Resources */,
+				97901B9830645871001D28B5 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97901B8E30645871001D28B5 /* PBXTargetDependency */,
+			);
+			name = BetterTheaterMode;
+			productName = BetterTheaterMode;
+			productReference = 97901B7030645871001D28B5 /* BetterTheaterMode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97901B8A30645871001D28B5 /* BetterTheaterMode Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97901B9530645871001D28B5 /* Build configuration list for PBXNativeTarget "BetterTheaterMode Extension" */;
+			buildPhases = (
+				97901B8730645871001D28B5 /* Sources */,
+				97901B8830645871001D28B5 /* Frameworks */,
+				97901B8930645871001D28B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "BetterTheaterMode Extension";
+			productName = "BetterTheaterMode Extension";
+			productReference = 97901B8B30645871001D28B5 /* BetterTheaterMode Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97901B6830645871001D28B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					97901B6F30645871001D28B5 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					97901B8A30645871001D28B5 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 97901B6B30645871001D28B5 /* Build configuration list for PBXProject "BetterTheaterMode" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97901B6730645871001D28B5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 97901B7130645871001D28B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97901B6F30645871001D28B5 /* BetterTheaterMode */,
+				97901B8A30645871001D28B5 /* BetterTheaterMode Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97901B6E30645871001D28B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				97901B7A30645871001D28B5 /* Icon.png in Resources */,
+				97901B7E30645871001D28B5 /* Script.js in Resources */,
+				97901B7830645871001D28B5 /* Main.html in Resources */,
+				97901B7C30645871001D28B5 /* Style.css in Resources */,
+				97867543306463180077440C /* AppIcon.icon in Resources */,
+			);
+		};
+		97901B8930645871001D28B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				97901BA530645871001D28B5 /* manifest.json in Resources */,
+				97901BA430645871001D28B5 /* icons in Resources */,
+				97901BA330645871001D28B5 /* background.js in Resources */,
+				97901BA230645871001D28B5 /* content.css in Resources */,
+				97901BA630645871001D28B5 /* content.js in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97901B6C30645871001D28B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				97901BA830645871001D28B5 /* BetterTheaterModeApp.swift in Sources */,
+			);
+		};
+		97901B8730645871001D28B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				97901B9130645871001D28B5 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97901B8E30645871001D28B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97901B8A30645871001D28B5 /* BetterTheaterMode Extension */;
+			targetProxy = 97901B8D30645871001D28B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97901B7630645871001D28B5 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97901B7730645871001D28B5 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97901B9330645871001D28B5 /* Debug configuration for PBXProject "BetterTheaterMode" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97901B9430645871001D28B5 /* Release configuration for PBXProject "BetterTheaterMode" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		97901B9630645871001D28B5 /* Debug configuration for PBXNativeTarget "BetterTheaterMode Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 765NLLZL56;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BetterTheaterMode Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BetterTheaterMode Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsun.BetterTheaterMode.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		97901B9730645871001D28B5 /* Release configuration for PBXNativeTarget "BetterTheaterMode Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 765NLLZL56;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BetterTheaterMode Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BetterTheaterMode Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsun.BetterTheaterMode.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		97901B9A30645871001D28B5 /* Debug configuration for PBXNativeTarget "BetterTheaterMode" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 765NLLZL56;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BetterTheaterMode/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BetterTheaterMode;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsun.BetterTheaterMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		97901B9B30645871001D28B5 /* Release configuration for PBXNativeTarget "BetterTheaterMode" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 765NLLZL56;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BetterTheaterMode/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BetterTheaterMode;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsun.BetterTheaterMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97901B6B30645871001D28B5 /* Build configuration list for PBXProject "BetterTheaterMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97901B9330645871001D28B5 /* Debug configuration for PBXProject "BetterTheaterMode" */,
+				97901B9430645871001D28B5 /* Release configuration for PBXProject "BetterTheaterMode" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		97901B9530645871001D28B5 /* Build configuration list for PBXNativeTarget "BetterTheaterMode Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97901B9630645871001D28B5 /* Debug configuration for PBXNativeTarget "BetterTheaterMode Extension" */,
+				97901B9730645871001D28B5 /* Release configuration for PBXNativeTarget "BetterTheaterMode Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		97901B9930645871001D28B5 /* Build configuration list for PBXNativeTarget "BetterTheaterMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97901B9A30645871001D28B5 /* Debug configuration for PBXNativeTarget "BetterTheaterMode" */,
+				97901B9B30645871001D28B5 /* Release configuration for PBXNativeTarget "BetterTheaterMode" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97901B6830645871001D28B5 /* Project object */;
+	validationLevel = 1;
+}

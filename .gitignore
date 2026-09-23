@@ -1,0 +1,22 @@
+# Build output (xcodebuild DerivedData)
+build/
+
+# Generated icon exports (regenerable from Icon.icon via Icon Composer)
+Icon Exports/
+
+# ZCode session artifacts
+.zcode/
+.zcodeignore
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+*.moved-aside
+DerivedData/
+
+# macOS
+.DS_Store
+
+# Swift tooling
+.build/
+.swiftpm/
